@@ -24,7 +24,7 @@ function App() {
     <Router>
       <AuthProvider value={{currentUser, timeActive, setTimeActive}}>
       <Switch>
-        <PrivateRoute exact path="/" component={Profile} />
+        <PrivateRoute exact path="https://iterator-dashboard.netlify.app/" component={Profile} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path='/verify-email' component={VerifyEmail} /> 
