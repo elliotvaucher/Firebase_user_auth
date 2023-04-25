@@ -2,18 +2,22 @@ import './profile.css'
 import {useAuthValue} from './AuthContext'
 import { signOut } from 'firebase/auth' 
 import { auth } from './firebase'
-import {Route, Redirect} from "react-router-dom";
-import Register from './Register';
-
 
 function Profile() {
   const {currentUser} = useAuthValue()
 
   return (
-  <Route exact path="/">
-    {currentUser ? <Redirect to="/iterator-dashboard.netlify.app" /> : <Register />}
-  </Route>
-
+    <div className='center'>
+      <div className='profile'>
+        <h1>Profile</h1>
+        <p><strong>Email: </strong>{currentUser?.email}</p>
+        <p>
+          <strong>Email verified: </strong>
+          {`${currentUser?.emailVerified}`}
+        </p>
+        <span onClick={() => signOut(auth)}>Sign Out</span>
+      </div>
+    </div>
   )
 }
 
