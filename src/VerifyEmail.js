@@ -10,7 +10,7 @@ function VerifyEmail() {
 
   const {currentUser} = useAuthValue()
 
-  const [buttonDisabled, setButtonDisabled] = useState(false)
+  const [setButtonDisabled] = useState(false)
 
   const [time, setTime] = useState(60)
 
@@ -47,7 +47,7 @@ function VerifyEmail() {
       clearInterval(interval)
     }
     return () => clearInterval(interval);
-  }, [timeActive, time])
+  }, [timeActive, time, setTimeActive])
 
   const resendEmailVerification = () => {
     setButtonDisabled(true)
