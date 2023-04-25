@@ -10,8 +10,8 @@ function Profile() {
   const {currentUser} = useAuthValue()
 
   return (
-  <Route exact path="https://iterator-dashboard.netlify.app">
-    {currentUser ? <Redirect to="/" /> : <Register />}
+  <Route exact path="/">
+    {currentUser ? <Redirect to="/iterator-dashboard.netlify.app" /> : <Register />}
   </Route>
 
   )
