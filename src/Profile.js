@@ -11,7 +11,7 @@ function Profile() {
 
   return (
   <Route exact path="https://iterator-dashboard.netlify.app">
-    {currentUser ? <Redirect to="/" /> : <Register />}
+    {currentUser ? <Redirect to="https://iterator-dashboard.netlify.app" /> : <Register />}
   </Route>
 
   )
