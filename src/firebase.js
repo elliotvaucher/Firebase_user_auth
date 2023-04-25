@@ -2,16 +2,17 @@ import { initializeApp } from 'firebase/app'
 import {getAuth} from 'firebase/auth'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBabo7XfrbgD_z4qIsf3KWHnPwwqUBM5xI",
-  authDomain: "fir-user-reg-auth.firebaseapp.com",
-  projectId: "fir-user-reg-auth",
-  storageBucket: "fir-user-reg-auth.appspot.com",
-  messagingSenderId: "720211998290",
-  appId: "1:720211998290:web:8291fab2697dbaafc2d18b"
-}
+ apiKey: "AIzaSyAu6gLWz5y7gty-v0TNKGfIVmazhBTHZUQ",
+ authDomain: "iterator-5d01b.firebaseapp.com",
+ projectId: "iterator-5d01b",
+ storageBucket: "iterator-5d01b.appspot.com",
+ messagingSenderId: "22481333276",
+ appId: "1:22481333276:web:9110f23dbf0105360183d9",
+ measurementId: "G-XMWMZYWC4B"
+};
 
-// Initialize Firebase and Firebase Authentication
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
+
 
 export {auth}
