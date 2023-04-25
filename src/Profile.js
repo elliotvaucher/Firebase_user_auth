@@ -1,7 +1,7 @@
 import './profile.css'
 import {useAuthValue} from './AuthContext'
-import { signOut } from 'firebase/auth' 
-import { auth } from './firebase'
+/* import { signOut } from 'firebase/auth' 
+import { auth } from './firebase' */
 import {Route, Redirect} from "react-router-dom";
 import Register from './Register';
 
